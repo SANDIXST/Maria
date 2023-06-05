@@ -7,6 +7,7 @@
   <!-- Подключение стилей Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  
   <style>
     #home,
     #about,
@@ -45,28 +46,28 @@
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Услуги</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center scroll-reveal">
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center">
             <img src="image/free-icon-hair-cut-tool-32069.png" alt="Стрижки" class="h-28 w-28 object-contain">
           </div>
           <h3 class="text-2xl font-bold mb-2">Стрижки</h3>
           <p class="text-gray-600 text-xl text-center">Мы предлагаем широкий выбор стрижек для женщин, мужчин и детей.</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center scroll-reveal">
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center">
             <img src="image/free-icon-hair-dye-brush-4397864.png" alt="Окрашивание" class="h-28 w-28 object-contain">
           </div>
           <h3 class="text-2xl font-bold mb-2">Окрашивание</h3>
           <p class="text-gray-600 text-xl text-center">Мы используем только качественные краски и поможем выбрать подходящий оттенок.</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center scroll-reveal">
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center">
             <img src="image/free-icon-hair-mask-2059402.png" alt="Уход за волосами" class="h-28 w-28 object-cover">
           </div>
           <h3 class="text-2xl font-bold mb-2">Уход за волосами</h3>
           <p class="text-gray-600 text-xl text-center">Мы предлагаем услуги по уходу за волосами, в том числе восстановление и лечение.</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center scroll-reveal">
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center">
             <img src="image/free-icon-barber-4943061.png" alt="Услуги для мужчин" class="h-28 w-28 object-cover">
           </div>
@@ -76,6 +77,7 @@
       </div>
     </div>
   </section>
+  
   
   <section id="home" class="bg-gray-200 py-20 bg-cover" style="background-image: url('image/curly-female-client-picking-a-color-for-hait-toning-in-beaty-salone\ \(1\).jpg')">
   </section>
@@ -130,23 +132,23 @@
         <form>
           <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Ваше имя</label>
-            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите ваше имя">
+            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите имя">
           </div>
           <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="tel">Номер телефона</label>
-            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Введите ваш email">
+            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Введите номер телефона">
           </div>
           <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Примечание</label>
-            <textarea class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+            <textarea class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Введите сообщение"></textarea>
           </div>
           <div class="flex items-center justify-center">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline" type="button">
               Отправить
             </button>
           </div>
-          <p class="text-gray-600 text-xl mt-3 text-center">После оствления заявки, с вами свяжется администратор</p>
         </form>
+        <p class="text-gray-600 text-xl mt-3 text-center">После оствления заявки, с вами свяжется администратор</p>
       </div>
     </div>
   </section>
@@ -179,6 +181,9 @@
         behavior: "smooth"
       });
     } 
+    
   </script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 </body>
 </html>
