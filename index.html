@@ -1,264 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Primary Meta Tags -->
-  <title>BeautySalon</title>
-  <meta name="title" content="BeautySalon">
-  <meta name="description" content="Um salão exclusivo em São Paulo, especializado em tratamentos naturais.">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://matheuscostadesign.github.io/nlw6-beauty-salon/">
-  <meta property="og:title" content="BeautySalon">
-  <meta property="og:description" content="Um salão exclusivo em São Paulo, especializado em tratamentos naturais.">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/matheuscostadesign/nlw6-beauty-salon/main/assets/.github/open-graph.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://matheuscostadesign.github.io/nlw6-beauty-salon/">
-  <meta property="twitter:title" content="BeautySalon">
-  <meta property="twitter:description"
-    content="Um salão exclusivo em São Paulo, especializado em tratamentos naturais.">
-  <meta property="twitter:image"
-    content="https://raw.githubusercontent.com/matheuscostadesign/nlw6-beauty-salon/main/assets/.github/open-graph.png">
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="libs/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Icons (icomoon.io) -->
-  <link rel="stylesheet" href="assets/fonts/style.css">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Favicons -->
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <meta name="msapplication-TileColor" content="#69B99D">
-  <meta name="theme-color" content="#69B99D">
-
+  <title>Парикмахерская "Мария"</title>
+  <!-- Подключение стилей Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    #home,
+    #about,
+    #services,
+    #contact {
+      min-height: 100vh;
+    }
+  </style>
 </head>
-
-<body>
-
-  <!-- Header -->
-  <header id="header">
-    <nav class="container">
-      <a class="logo" href="#">Салон<span> Красоты</span> <span> Мария</span>.</a>
-      <div class="menu">
-        <ul class="grid">
-          <li><a class="title" href="#home">Начинать</a></li>
-          <li><a class="title" href="#about">Sobre</a></li>
-          <li><a class="title" href="#services">услуги</a></li>
-          <li><a class="title" href="#feedback">Depoimentos</a></li>
-          <li><a class="title" href="#contact">Контакт</a></li>
-        </ul>
-      </div>
-      <div class="toggle icon-menu"></div>
-      <div class="toggle icon-close"></div>
-    </nav>
+<body class="bg-gray-100">
+  <!-- Шапка сайта -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-gray-800">Парикмахерская "Мария"</a>
+      <nav>
+        <a href="#home" class="mr-4 text-gray-800 hover:text-gray-600">Главная</a>
+        <a href="#about" class="mr-4 text-gray-800 hover:text-gray-600">О нас</a>
+        <a href="#services" class="mr-4 text-gray-800 hover:text-gray-600">Услуги</a>
+        <a href="#contact" class="text-gray-800 hover:text-gray-600">Контакты</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Home -->
-    <section class="section" id="home">
-      <div class="container grid">
-        <div class="image">
-          <img src="assets/images/main.jpg" alt="Mulher sorrindo penteando outra mulher">
+  <!-- Баннер -->
+  <section id="home" class="bg-gray-200 py-20 bg-cover" style="background-image: url('image/scissors-and-hair-trimmer-copy-space.jpg')">
+    <div class="container mx-auto px-4">
+        <div class="w-full md:w-1/2 float-left pr-8">
+            <h1 class="text-5xl font-bold text-white lg:text-left mb-8">Добро пожаловать в парикмахерскую "Мария"</h1>
+            <p class="text-2xl text-white lg:text-left">Мы предлагаем профессиональные услуги по стрижке и уходу за волосами.</p>
         </div>
-        <div class="text">
-          <h2 class="title">Естественное здоровье для ваших волос</h2>
-          <p>Эксклюзивный салон в Сан-Паулу, специализирующийся на натуральных процедурах.</p>
-          <a class="button" target="_blank"
-            href="https://api.whatsapp.com/send?phone=+5517992143072&text=Vamos agendar um horário!">Agendar um
-            horário</a>
-        </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Divisor -->
-    <div class="divider-1"></div>
-
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="container grid">
-        <div class="image">
-          <img src="assets/images/about.jpg" alt="3 mulheres sorrinfo">
-        </div>
-        <div class="text">
-          <h2 class="title">Sobre nós</h2>
-          <p>Салон красоты - это новая концепция салона: уютное, альтернативное пространство с этическим подходом,
-            где используются продукты, которые уважают ваше здоровье
-            и природу.
-          </p>
-          <br>
-          <p>Супер медленный салон красоты, с индивидуальным обслуживанием, очень спокойной обстановкой и с
-            много разговоров по душам.</p>
-          <br>
-          <p>Имидж здесь не рассматривается как тщетность. Чувствовать себя хорошо - это часть самооценки, а имидж каждого
-            передает сообщение. Это сообщение должно соответствовать тому, кто мы есть, оно должно представлять нас.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divider-2"></div>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="container grid">
-        <header>
-          <h2 class="title">Serviços</h2>
-          <p class="subtitle">Более 10 лет на рынке, <strong>Мария</strong> уже завоевал клиентов из многих стран мира.
-            бесчисленных стран
-            благодаря своим
-            эксклюзивными, полностью натуральными процедурами</p>
-        </header>
-        <div class="cards grid">
-          <div class="card">
-            <i class="icon-woman-hair"></i>
-            <h3 class="title">Terapia Capilar</h3>
-            <p>Комплексная терапия для кожи головы и волос, защищающая все типы волос, включая длинные и
-              тонкие волосы.</p>
+  <!-- О нас -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 ">О нас</h2>
+      <div class="flex flex-wrap justify-center">
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/free-icon-hair-cut-tool-32069.png'); background-size: contain; background-position: center;">
+            <i class="fas fa-cut"></i>
           </div>
-          <div class="card">
-            <i class="icon-trim"></i>
-            <h3 class="title">Cortes</h3>
-            <p>В нашей команде работают признанные профессионалы, известные тем, что запускают тренды с дифференцированными и
-              дифференцированными и классическими стрижками.</p>
+          <h3 class="text-2xl font-bold mb-2">Стрижки</h3>
+          <p class="text-gray-600 text-xl">Мы предлагаем широкий выбор стрижек для женщин, мужчин и детей.</p>
+        </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/free-icon-hair-dye-brush-4397864.png'); padding: 20%;">
+            <i class="fas fa-paint-brush"></i>
           </div>
-          <div class="card">
-            <i class="icon-cosmetic"></i>
-            <h3 class="title">Лечение</h3>
-            <p>В салоне красоты есть несколько натуральных и полностью веганских процедур для любого типа волос.
-            </p>
+          <h3 class="text-2xl font-bold mb-2">Окрашивание</h3>
+          <p class="text-gray-600 text-xl">Мы используем только качественные краски и поможем выбрать подходящий оттенок.</p>
+        </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/haircut.jpg'); background-size: cover;">
+            <i class="fas fa-shower"></i>
           </div>
+          <h3 class="text-2xl font-bold mb-2">Уход за волосами</h3>
+          <p class="text-gray-600 text-xl">Мы предлагаем услуги по уходу за волосами, в том числе восстановление и лечение.</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divider-1"></div>
-
-    <!-- feedback -->
-    <section class="section" id="feedback">
-      <div class="container">
-        <header>
-          <h2 class="title">Отзывы тех, кто прошел через это место</h2>
-        </header>
-        <!-- блок отзывов -->
-        <div class="feedback swiper-container">  
-          <div class="swiper-wrapper">
-            <div class="feedback-с swiper-slide">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Прекрасные мастера с золотыми руками. Спасибо Лене и Тане.
-                </p>
-                <cite>
-                  <img src="assets/images/feedback-с-01.jpg" alt="Foto de Wanessa Souza">
-                   Зоя Шувалова
-                </cite>
-              </blockquote>
-            </div>
-
-            <div class="feedback-с swiper-slide">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Я являюсь клиентом Beautysalon уже 5 лет и ни на что не променяю это время! Мои волосы, конечно, сильно изменились с тех пор.
-                  этого
-                  начала лечиться только натуральными и веганскими продуктами. Они невероятные и квалифицированные профессионалы.
-                </p>
-                <cite>
-                  <img src="assets/images/feedback-с-02.jpg" alt="Foto de Alexandra Moreira">
-                  Alexandra Moreira
-                </cite>
-              </blockquote>
-            </div>
-
-            <div class="feedback-с swiper-slide">
-              <blockquote>
-                <p>
-                  <span>&ldquo;</span>
-                  Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois
-                  que
-                  comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.
-                </p>
-                <cite>
-                  <img src="assets/images/feedback-с-03.jpg" alt="Foto de Franciele Siqueira">
-                  Franciele Siqueira
-                </cite>
-              </blockquote>
-            </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/haircut.jpg'); background-size: cover;">
+            <i class="fas fa-male"></i>
           </div>
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
+          <h3 class="text-2xl font-bold mb-2">Услуги для мужчин</h3>
+          <p class="text-gray-600 text-xl">Мы предлагаем стрижки и бритье для мужчин, а также уход за бородой и усами.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Мастера -->
+  <section id="personal" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 ">Наши Мастера</h2>
+      <div class="flex flex-wrap justify-center">
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/confident-looking-young-beautiful-female-barber-in-uniform-holding-barber-tools-isolated-on-pink-wall.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <i class="fas fa-cut"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Головач Елена</h3>
+          <p class="text-gray-600 text-xl">Парикмахер</p>
+        </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/free-icon-hair-dye-brush-4397864.png'); padding: 20%;">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Окрашивание</h3>
+          <p class="text-gray-600 text-xl">Мы используем только качественные краски и поможем выбрать подходящий оттенок.</p>
+        </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/haircut.jpg'); background-size: cover;">
+            <i class="fas fa-shower"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Уход за волосами</h3>
+          <p class="text-gray-600 text-xl">Мы предлагаем услуги по уходу за волосами, в том числе восстановление и лечение.</p>
+        </div>
+        
+        <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
+          <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/haircut.jpg'); background-size: cover;">
+            <i class="fas fa-male"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">Услуги для мужчин</h3>
+          <p class="text-gray-600 text-xl">Мы предлагаем стрижки и бритье для мужчин, а также уход за бородой и усами.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Контакты</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Адрес</h3>
+          <p class="text-gray-600">г. Москва, ул. Пушкина, д.10</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Телефон</h3>
+          <p class="text-gray-600">+7 (999) 123-45-67</p>
+        </div>
+        <div class="bg-white rounded-lg shadow-md p-6">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">E-mail</h3>
+          <p class="text-gray-600">info@mariabarbershop.ru</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Divisor -->
-    <div class="divider-2"></div>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container grid">
-        <div class="text">
-          <h2 class="title">Свяжитесь с нами!</h2>
-          <p>Обращайтесь в парикмахерскую Мария, мы хотим ответить на ваши вопросы, выслушать ваши критические замечания и предложения.</p>
-          <a href="https://api.whatsapp.com/send?phone=+5517992143072&text=Vamos agendar um horário!" target="_blank"
-            class="button"><i class="icon-whatsapp"></i> Свяжитесь с нами</a>
-        </div>
-        <div class="links">
-          <ul class="grid">
-            <li><i class="icon-phone"></i> 11 99845-6754</li>
-            <li><i class="icon-map-pin"></i> R. Amauri Souza, 346</li>
-            <li><i class="icon-mail"></i> contato@beautysalon.com</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divider-1"></div>
-
-  </main>
-
-  <footer class="section">
-    <div class="container grid">
-      <div class="brand">
-        <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
-        <p>© 2023 Maria inc.</p>
-        <p>Все права защищены.</p>
-      </div>
-      <div class="social">
-        <a href="#" target="_blank"><i class="icon-instagram"></i></a>
-        <a href="#" target="_blank"><i class="icon-facebook"></i></a>
-        <a href="#" target="_blank"><i class="icon-youtube"></i></a>
-      </div>
+  <!-- Подвал сайта -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 flex justify-between items-center text-center">
+      <p>&copy; 2023 Парикмахерская "Мария". Все права защищены.</p>
     </div>
   </footer>
 
-  <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+  <!-- Скрипт для плавного перелистывания при нажатии на навигационные ссылки -->
+  <script>
+    // Получаем ссылки на блоки и навигационные ссылки
+    const homeSection = document.querySelector('#home');
+    const aboutSection = document.querySelector('#about');
+    const servicesSection = document.querySelector('#services');
+    const contactSection = document.querySelector('#contact');
+    const homeLink = document.querySelector('a[href="#home"]');
+    const aboutLink = document.querySelector('a[href="#about"]');
+    const servicesLink = document.querySelector('a[href="#services"]');
+    const contactLink = document.querySelector('a[href="#contact"]');
 
-  <!-- Swiper / Scroll -->
-  <script src="libs/swiper-bundle.min.js"></script>
-  <!-- Scroll Reveal -->
-  <script src="libs/scrollreveal.min.js"></script>
-  <!-- Scripts -->
-  <script src="main.js"></script>
+    // Функция, которая перелистывает страницу к нужному блоку
+    function scrollToSection(section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
 
+    // Обработчики нажатий на навигационные ссылки
+    homeLink.addEventListener('click', () => scrollToSection(homeSection));
+    aboutLink.addEventListener('click', () => scrollToSection(aboutSection));
+    servicesLink.addEventListener('click', () => scrollToSection(servicesSection));
+    contactLink.addEventListener('click', () => scrollToSection(contactSection));
+    
+    // Инициируем анимацию при скролле страницы
+    window.addEventListener('scroll', function() {
+      const element = document.querySelector('.animate__animated');
+      const position = element.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (position < screenPosition) {
+        element.classList.add('animate__fadeIn');
+      }
+    })
+  </script>
 </body>
-
 </html>
