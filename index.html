@@ -20,12 +20,11 @@
   <!-- Шапка сайта -->
   <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-gray-800">Парикмахерская "Мария"</a>
+      <a href="#" class="text-xl font-bold text-gray-800">Парикмахерская "Мария"</a>
       <nav>
-        <a href="#home" class="mr-4 text-gray-800 hover:text-gray-600">Главная</a>
-        <a href="#about" class="mr-4 text-gray-800 hover:text-gray-600">О нас</a>
-        <a href="#services" class="mr-4 text-gray-800 hover:text-gray-600">Услуги</a>
-        <a href="#contact" class="text-gray-800 hover:text-gray-600">Контакты</a>
+        <a href="#" onclick="smoothScroll('#home')" class="mr-4 text-gray-800 hover:text-gray-600">Главная</a>
+        <a href="#" onclick="smoothScroll('#about')" class="mr-4 text-gray-800 hover:text-gray-600">Услуги</a>
+        <a href="#" onclick="smoothScroll('#contact')" class="text-gray-800 hover:text-gray-600">Контакты</a>
       </nav>
     </div>
   </header>
@@ -38,7 +37,7 @@
             <p class="text-2xl text-white lg:text-left">Мы предлагаем профессиональные услуги по стрижке и уходу за волосами.</p>
         </div>
     </div>
-</section>
+  </section>
 
   <!-- Услуги -->
   
@@ -91,7 +90,7 @@
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/confident-looking-young-beautiful-female-barber-in-uniform-holding-barber-tools-isolated-on-pink-wall.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <i class="fas fa-cut"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-2">Елена Спиридонова</h3>
+          <h3 class="text-2xl font-bold mb-2">Елена Попова</h3>
           <p class="text-gray-600 text-xl">Парикмахер</p>
         </div>
         
@@ -99,7 +98,7 @@
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/confident-adult-female-barber-in-uniform-holding-combs-spray-bottle-and-scissors-isolated-on-purple-wall-with-copy-space\ \(1\).jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <i class="fas fa-paint-brush"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-2">Светлана Землеройка</h3>
+          <h3 class="text-2xl font-bold mb-2">Светлана Калинина</h3>
           <p class="text-gray-600 text-xl">Парикмахер</p>
         </div>
         
@@ -115,8 +114,8 @@
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/unpleased-young-beautiful-girl-sitting-at-desk-with-makeup-tools-holding-and-crossing-makeup-brushes-isolated-on-olive-green-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <i class="fas fa-male"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-2">Юлия <br> Черных</h3>
-          <p class="text-gray-600 text-xl">Мастер Макиажа</p>
+          <h3 class="text-2xl font-bold mb-2">Юлия <br> Кузнецова</h3>
+          <p class="text-gray-600 text-xl">Мастер Макияжа</p>
         </div>
         
       </div>
@@ -124,72 +123,62 @@
   </section>
 
   <!-- Контакты -->
-  <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4">
-    <div class="max-w-2xl w-full mx-auto p-6 bg-white shadow-md rounded-lg">
-      <h2 class="text-3xl font-semibold text-center mb-6">Форма записи в салон красоты</h2>
-      <form>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Ваше имя</label>
-          <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите ваше имя">
-        </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email адрес</label>
-          <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Введите ваш email">
-        </div>
-        <div class="mb-6">
-          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Сообщение</label>
-          <textarea class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
-        </div>
-        <div class="flex items-center justify-center">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline" type="button">
-            Отправить
-          </button>
-        </div>
-      </form>
+  <section id="contact">
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4" style="background-image: url('image/3332285_901.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <div class="max-w-2xl w-full mx-auto p-6 bg-white shadow-md rounded-lg" >
+        <h2 class="text-3xl font-semibold text-center mb-6">Записаться</h2>
+        <form>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Ваше имя</label>
+            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите ваше имя">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="tel">Номер телефона</label>
+            <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Введите ваш email">
+          </div>
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Примечание</label>
+            <textarea class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+          </div>
+          <div class="flex items-center justify-center">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg focus:outline-none focus:shadow-outline" type="button">
+              Отправить
+            </button>
+          </div>
+          <p class="text-gray-600 text-xl mt-3 text-center">После оствления заявки, с вами свяжется администратор</p>
+        </form>
+      </div>
     </div>
-  </div>
+  </section>
   
 
   <!-- Подвал сайта -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto px-4 text-center">
-      <p class="text-sm text-gray-300">&copy; 2023 Корпорация "Мария". Все права защищены.</p>
-    </div>
+  <footer class="bg-white py-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <ul class="flex space-x-4">
+        <li><a href="#home" onclick="smoothScroll('#home')" class="text-gray-600 font-normal hover:text-gray-800">Главная</a></li>
+        <li><a href="#about" onclick="smoothScroll('#about')" class="text-gray-600 hover:text-gray-800">Услуги</a></li>
+        <li><a href="#contact" onclick="smoothScroll('#contact')" class="text-gray-600 hover:text-gray-800">Контакты</a></li>
+      </ul>
+      <div>
+        <a   onclick="smoothScroll('#home')" class="text-xl font-medium text-gray-800">Парикмахерская "Мария"</a>
+      </div>
+    </nav>
   </footer>
+  
+  
 
 
   <!-- Скрипт для плавного перелистывания при нажатии на навигационные ссылки -->
   <script>
-    // Получаем ссылки на блоки и навигационные ссылки
-    const homeSection = document.querySelector('#home');
-    const aboutSection = document.querySelector('#about');
-    const servicesSection = document.querySelector('#services');
-    const contactSection = document.querySelector('#contact');
-    const homeLink = document.querySelector('a[href="#home"]');
-    const aboutLink = document.querySelector('a[href="#about"]');
-    const servicesLink = document.querySelector('a[href="#services"]');
-    const contactLink = document.querySelector('a[href="#contact"]');
-
-    // Функция, которая перелистывает страницу к нужному блоку
-    function scrollToSection(section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Обработчики нажатий на навигационные ссылки
-    homeLink.addEventListener('click', () => scrollToSection(homeSection));
-    aboutLink.addEventListener('click', () => scrollToSection(aboutSection));
-    servicesLink.addEventListener('click', () => scrollToSection(servicesSection));
-    contactLink.addEventListener('click', () => scrollToSection(contactSection));
-    
-    // Инициируем анимацию при скролле страницы
-    window.addEventListener('scroll', function() {
-      const element = document.querySelector('.animate__animated');
-      const position = element.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.3;
-      if (position < screenPosition) {
-        element.classList.add('animate__fadeIn');
-      }
-    })
+    // Функция для плавного скроллинга к элементу по id
+    function smoothScroll(target) {
+      const element = document.querySelector(target);
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: "smooth"
+      });
+    } 
   </script>
 </body>
 </html>
