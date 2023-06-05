@@ -20,7 +20,7 @@
 <body class="bg-gray-100">
   <!-- Шапка сайта -->
   <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center max-w-7xl mx-auto">
       <a href="#" class="text-xl font-bold text-gray-800">Парикмахерская "Мария"</a>
       <nav>
         <a href="#" onclick="smoothScroll('#home')" class="mr-4 text-gray-800 hover:text-gray-600">Главная</a>
@@ -32,7 +32,7 @@
 
   <!-- Баннер -->
   <section id="home" class="bg-gray-200 py-20 bg-cover" style="background-image: url('image/scissors-and-hair-trimmer-copy-space.jpg')">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 max-w-7xl mx-auto">
         <div class="w-full md:w-1/2 float-left pr-8">
             <h1 class="text-5xl font-bold text-white lg:text-left mb-8">Добро пожаловать в парикмахерскую "Мария"</h1>
             <p class="text-2xl text-white lg:text-left">Мы предлагаем профессиональные услуги по стрижке и уходу за волосами.</p>
@@ -42,8 +42,8 @@
 
   <!-- Услуги -->
   
-  <section id="about" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
+  <section id="about" class="py-16 bg-white ">
+    <div class="container mx-auto px-4 max-w-7xl mx-auto">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Услуги</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="flex flex-col items-center scroll-reveal">
@@ -79,12 +79,12 @@
   </section>
   
   
-  <section id="home" class="bg-gray-200 py-20 bg-cover" style="background-image: url('image/curly-female-client-picking-a-color-for-hait-toning-in-beaty-salone\ \(1\).jpg')">
+  <section id="home" class="bg-gray-200 py-20 bg-cover " style="background-image: url('image/curly-female-client-picking-a-color-for-hait-toning-in-beaty-salone\ \(1\).jpg')">
   </section>
 
   <!-- Мастера -->
   <section id="personal" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 max-w-7xl mx-auto">
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 ">Наши Мастера</h2>
       <div class="flex flex-wrap justify-center">
         
@@ -92,7 +92,7 @@
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/confident-looking-young-beautiful-female-barber-in-uniform-holding-barber-tools-isolated-on-pink-wall.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <i class="fas fa-cut"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-2">Елена Попова</h3>
+          <h3 class="text-2xl font-bold mb-2">Елена <br> Попова</h3>
           <p class="text-gray-600 text-xl">Парикмахер</p>
         </div>
         
@@ -100,7 +100,7 @@
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center" style="background-image: url('image/confident-adult-female-barber-in-uniform-holding-combs-spray-bottle-and-scissors-isolated-on-purple-wall-with-copy-space\ \(1\).jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <i class="fas fa-paint-brush"></i>
           </div>
-          <h3 class="text-2xl font-bold mb-2">Светлана Калинина</h3>
+          <h3 class="text-2xl font-bold mb-2">Светлана <br> Калинина</h3>
           <p class="text-gray-600 text-xl">Парикмахер</p>
         </div>
         
@@ -126,10 +126,10 @@
 
   <!-- Контакты -->
   <section id="contact">
-    <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4" style="background-image: url('image/3332285_901.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4 " style="background-image: url('image/3332285_901.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
       <div class="max-w-2xl w-full mx-auto p-6 bg-white shadow-md rounded-lg" >
-        <h2 class="text-3xl font-semibold text-center mb-6">Записаться</h2>
-        <form>
+        <h2 class="text-3xl font-semibold text-center mb-6">Записаться онлайн</h2>
+        <form class="max-w-7xl mx-auto">
           <div class="mb-6">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Ваше имя</label>
             <input class="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите имя">
@@ -156,7 +156,7 @@
 
   <!-- Подвал сайта -->
   <footer class="bg-white py-4">
-    <nav class="container mx-auto flex justify-between items-center">
+    <nav class="container mx-auto flex justify-between items-center ">
       <ul class="flex space-x-4">
         <li><a href="#home" onclick="smoothScroll('#home')" class="text-gray-600 font-normal hover:text-gray-800">Главная</a></li>
         <li><a href="#about" onclick="smoothScroll('#about')" class="text-gray-600 hover:text-gray-800">Услуги</a></li>
