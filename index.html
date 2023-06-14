@@ -12,6 +12,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/gsap/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/scrollxp/dist/scrollxp.min.js"></script>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <style>
     #home,
     #contact {
@@ -267,23 +271,78 @@
 
   <!-- Отзывы -->
   
-  <div class="bg-gray-100 py-8 px-4">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-8">Отзывы клиентов</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <img src="client1.jpg" alt="Client 1" class="w-16 h-16 rounded-full mx-auto mb-4">
-          <h3 class="text-lg font-bold mb-2">Имя клиента 1</h3>
-          <p class="text-gray-600">"Отличная парикмахерская! Всегда ухожу довольным и с красивой прической."</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <img src="client2.jpg" alt="Client 2" class="w-16 h-16 rounded-full mx-auto mb-4">
-          <h3 class="text-lg font-bold mb-2">Имя клиента 2</h3>
-          <p class="text-gray-600">"Профессиональные мастера, уютная атмосфера и отличный сервис. Рекомендую!"</p>
-        </div>
+  <!-- Swiper -->
+  <div class="container mx-auto mt-20 swiper mySwiper">
+    <div class="mb-16 swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+              <div class="mb-2">
+                <p class="mb-2 text-center text-gray-600 ">
+                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                </p>
+                <div class="flex flex-col items-center justify-center">
+                  <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                    <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
+                  </div>
+                <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
+                <p class="text-sm text-gray-600">лох</p>
+              </div>
+              </div>
+            </div>
       </div>
+      <div class="swiper-slide">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+              <div class="mb-2">
+                <p class="mb-2 text-center text-gray-600 ">
+                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                </p>
+                <div class="flex flex-col items-center justify-center">
+                  <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                    <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
+                  </div>
+                <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
+                <p class="text-sm text-gray-600">лох</p>
+              </div>
+              </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+              <div class="mb-2">
+                <p class="mb-2 text-center text-gray-600 ">
+                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                </p>
+                <div class="flex flex-col items-center justify-center">
+                  <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                    <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
+                  </div>
+                <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
+                <p class="text-sm text-gray-600">лох</p>
+              </div>
+              </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+              <div class="mb-2">
+                <p class="mb-2 text-center text-gray-600 ">
+                 "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse. "
+                </p>
+                <div class="flex flex-col items-center justify-center">
+                  <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
+                    <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
+                  </div>
+                <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
+                <p class="text-sm text-gray-600">лох</p>
+              </div>
+              </div>
+            </div>
+      </div>
+     
     </div>
+    <div class="swiper-pagination"></div>
   </div>
+
   
 
   <!-- Подвал сайта -->
@@ -302,61 +361,10 @@
 
   <script src="js/preloader.js"></script>
   <script src="js/scrollxp.js"></script>
-  <script>
-    // Функция для плавного скроллинга к элементу по id
-    function smoothScroll(target) {
-      $('html, body').animate({
-        scrollTop: $(target).offset().top
-      }, 1000);
-    }
-    
-    window.addEventListener("DOMContentLoaded", function() {
-    // Получаем ссылку на форму
-    const form = document.querySelector("form");
-
-    // Обрабатываем событие отправки формы
-    form.addEventListener("submit", function(event) {
-      // Проверяем каждое поле формы на заполненность
-      const nameInput = document.querySelector("#name");
-      const telInput = document.querySelector("#tel");
-      const messageInput = document.querySelector("#message");
-
-      if (!nameInput.value || !telInput.value || !messageInput.value) {
-        // Если какое-либо из полей не заполнено, предотвращаем отправку формы и выводим сообщение
-        event.preventDefault();
-        alert("Пожалуйста, заполните все поля формы.");
-      }
-    });
-    });
-    function openMapModal() {
-      document.getElementById("mapModal").classList.remove("hidden");
-    }
-
-    function closeMapModal() {
-      document.getElementById("mapModal").classList.add("hidden");
-    }
-    const carousel = document.querySelector('.carousel');
-    const inner = document.querySelector('.carousel-inner');
-    const prevBtn = document.querySelector('.carousel-control-prev');
-    const nextBtn = document.querySelector('.carousel-control-next');
-
-    const itemWidth = carousel.offsetWidth;
-    let translateX = 0;
-
-    prevBtn.addEventListener('click', () => {
-      translateX += itemWidth;
-      translateX = Math.min(0, translateX);
-      inner.style.transform = `translateX(${translateX}px)`;
-    });
-
-    nextBtn.addEventListener('click', () => {
-      translateX -= itemWidth;
-      const maxTranslateX = -itemWidth * (inner.children.length - 1);
-      translateX = Math.max(maxTranslateX, translateX);
-      inner.style.transform = `translateX(${translateX}px)`;
-    });
-  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swipper.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/scrollbyid.js"></script>
 
 </body>
 </html>
