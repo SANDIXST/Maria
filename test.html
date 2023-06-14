@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Отзывы</title>
+</head>
+<body>
+  <div class="bg-gray-100 py-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center justify-center mb-4">
+        <div class="w-16 h-1 bg-gray-400"></div>
+        <h2 class="text-2xl font-bold mx-4">Отзывы клиентов</h2>
+        <div class="w-16 h-1 bg-gray-400"></div>
+      </div>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Отзыв 1 -->
+          <div class="swiper-slide w-full md:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <div class="flex items-center mb-4">
+                <div class="flex-shrink-0">
+                  <img class="h-12 w-12 rounded-full object-cover" src="client1.jpg" alt="Фото клиента">
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-lg font-medium">Имя клиента 1</h3>
+                  <span class="text-gray-600">Должность клиента</span>
+                </div>
+              </div>
+              <p class="text-gray-700">Я посещаю парикмахерскую "Мария" уже несколько лет, и каждый раз я остаюсь очень довольна результатом! Стилисты владеют своим ремеслом на высоком уровне. Они прислушиваются к моим пожеланиям, дают профессиональные советы и создают прекрасные прически. Всегда рада возвращаться сюда и получать качественное обслуживание!</p>
+            </div>
+          </div>
+
+          <!-- Отзыв 2 -->
+          <div class="swiper-slide w-full md:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <div class="flex items-center mb-4">
+                <div class="flex-shrink-0">
+                  <img class="h-12 w-12 rounded-full object-cover" src="client2.jpg" alt="Фото клиента">
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-lg font-medium">Имя клиента 2</h3>
+                  <span class="text-gray-600">Должность клиента</span>
+                </div>
+              </div>
+              <p class="text-gray-700">Удивительная парикмахерская! Здесь я всегда чувствую себя прекрасно. Атмосфера в парикмахерской "Мария" очень расслабляющая и уютная. Стилисты внимательно выслушивают мои пожелания и помогают мне выбрать прическу, которая подходит именно мне. Результат всегда превосходит ожидания! Огромное спасибо команде "Мария" за их талант и профессионализм!</p>
+            </div>
+          </div>
+
+          <!-- Отзыв 3 -->
+          <div class="swiper-slide w-full md:w-1/2 lg:w-1/3 p-4">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <div class="flex items-center mb-4">
+                <div class="flex-shrink-0">
+                  <img class="h-12 w-12 rounded-full object-cover" src="client3.jpg" alt="Фото клиента">
+                </div>
+                <div class="ml-3">
+                  <h3 class="text-lg font-medium">Имя клиента 3</h3>
+                  <span class="text-gray-600">Должность клиента</span>
+                </div>
+              </div>
+              <p class="text-gray-700">Я всегда переживаю, когда иду к новому парикмахеру, но в парикмахерскую "Мария" меня привела моя подруга, и я была приятно удивлена! Весь персонал очень дружелюбный и внимательный. Мне посвятили достаточно времени, чтобы понять мои пожелания и создать идеальную прическу. Я полностью доверяю этой парикмахерской и рекомендую ее всем!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопки навигации -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
