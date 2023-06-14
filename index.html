@@ -14,6 +14,18 @@
     #contact {
       min-height: 100vh;
     }
+    .bg-gray-100 {
+    background-color: #f8f8f8;
+    }
+    .bg-white {
+      background-color: #fff;
+    }
+    .text-gray-600 {
+      color: #666;
+    }
+    .shadow {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -151,12 +163,6 @@
         </div>
       </div>
     </div>
-    
-    
-    
-    
-    
-    
   </section>
 
 
@@ -250,6 +256,25 @@
     </div>
   </section>
 
+  <!-- Отзывы -->
+  
+  <div class="bg-gray-100 py-8 px-4">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Отзывы клиентов</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="client1.jpg" alt="Client 1" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <h3 class="text-lg font-bold mb-2">Имя клиента 1</h3>
+          <p class="text-gray-600">"Отличная парикмахерская! Всегда ухожу довольным и с красивой прической."</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <img src="client2.jpg" alt="Client 2" class="w-16 h-16 rounded-full mx-auto mb-4">
+          <h3 class="text-lg font-bold mb-2">Имя клиента 2</h3>
+          <p class="text-gray-600">"Профессиональные мастера, уютная атмосфера и отличный сервис. Рекомендую!"</p>
+        </div>
+      </div>
+    </div>
+  </div>
   
 
   <!-- Подвал сайта -->
@@ -265,6 +290,8 @@
         </div>
     </nav>
   </footer>
+
+
   <script>
     // Функция для плавного скроллинга к элементу по id
     function smoothScroll(target) {
@@ -290,15 +317,35 @@
         alert("Пожалуйста, заполните все поля формы.");
       }
     });
-  });
-  function openMapModal() {
-    document.getElementById("mapModal").classList.remove("hidden");
-  }
+    });
+    function openMapModal() {
+      document.getElementById("mapModal").classList.remove("hidden");
+    }
 
-  function closeMapModal() {
-    document.getElementById("mapModal").classList.add("hidden");
-  }
-</script>
+    function closeMapModal() {
+      document.getElementById("mapModal").classList.add("hidden");
+    }
+    const carousel = document.querySelector('.carousel');
+    const inner = document.querySelector('.carousel-inner');
+    const prevBtn = document.querySelector('.carousel-control-prev');
+    const nextBtn = document.querySelector('.carousel-control-next');
+
+    const itemWidth = carousel.offsetWidth;
+    let translateX = 0;
+
+    prevBtn.addEventListener('click', () => {
+      translateX += itemWidth;
+      translateX = Math.min(0, translateX);
+      inner.style.transform = `translateX(${translateX}px)`;
+    });
+
+    nextBtn.addEventListener('click', () => {
+      translateX -= itemWidth;
+      const maxTranslateX = -itemWidth * (inner.children.length - 1);
+      translateX = Math.max(maxTranslateX, translateX);
+      inner.style.transform = `translateX(${translateX}px)`;
+    });
+  </script>
   <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
