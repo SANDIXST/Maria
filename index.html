@@ -94,9 +94,9 @@
   <!-- Услуги -->
   
   <section id="about" class="py-16 bg-white ">
-    <div class="scene container mx-auto px-4 max-w-7xl mx-auto" data-scene data-scene-hook="onCenter" data-scene-indicator="scene">
+    <div class="scene container px-4 max-w-7xl mx-auto" data-scene data-scene-hook="onCenter" >
       <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 opacity-10" data-animate data-animate-to-alpha="1" data-animate-duration="0.5">Услуги</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" data-animate data-animate-from-x="20" data-animate-to-x="0" data-animate-from-alpha="0" data-animate-to-alpha="1" data-animate-duration="0.3" data-animate-stagger="0.2" data-animate-ease="power1.out">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" data-animate data-animate-to-x="0" data-animate-from-alpha="0" data-animate-to-alpha="1" data-animate-duration="0.3" data-animate-stagger="0.2" data-animate-ease="power1.out">
         <div class="flex flex-col items-center scroll-reveal opacity-0"  >
           <div class="rounded-full bg-gray-200 h-52 w-52 mx-auto mb-4 flex items-center justify-center">
             <img src="image/free-icon-hair-cut-tool-32069.png" alt="Стрижки" class="h-28 w-28 object-contain">
@@ -128,64 +128,57 @@
       </div>
     </div>
 
-    <div class="scene max-w-5xl mx-auto mt-16" data-scene data-scene-hook="onCenter" data-scene-indicator="scene">
-      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Прайс</h2>
-      <div class="flex" data-animate data-animate-from-x="20" data-animate-to-x="0" data-animate-from-alpha="0" data-animate-to-alpha="1" data-animate-duration="0.3" data-animate-stagger="0.2" data-animate-ease="power1.out">
-        <div class="w-1/2 pr-2">
-          <div class="bg-gray-100 rounded-lg p-4">
-            <h2 class="text-gray-800 text-2xl font-bold mb-3  ">Женская стрижка:</h2>
-            <ul class="ml-4 text-xl ">
-              <li>Короткие волосы - от 500 руб</li>
-              <li>Средние волосы - от 550 руб</li>
-              <li>Стрижка челки - от 600 руб</li>
-              <li>Мытье головы - 200 руб</li>
-              <li>Подравнивание волос - от 300 руб</li>
-            </ul>
-            <h3 class="text-gray-800 text-2xl font-bold mb-3 mt-4">Укладка Женская:</h3>
-            <ul class="ml-4 text-xl">
-              <li>Короткие волосы - от 500 руб</li>
-              <li>Средние волосы - от 600 руб</li>
-              <li>Длинные волосы - от 800 руб</li>
-              <li>Локоны - от 800 руб</li>
-              <li class="italic font-medium mt-5 mb-4">Стоимость услуги зависит от густоты волос и сложности прически</li>
-            </ul>
-          </div>
-        </div>
-        <div class="w-1/2 pl-2">
-          <div class="bg-gray-100 rounded-lg p-4">
-            <h2 class="text-gray-800 text-2xl font-bold mb-4">Мужская стрижка:</h2>
-            <ul class="ml-4 text-xl">
-              <li>Модельная стрижка - 400 руб</li>
-              <li>Бокс, полубокс - 350 руб</li>
-              <li>Андеркат - 400 руб</li>
-              <li>Площадка - 500 руб</li>
-              <li>Машинкой (1 насадка) - 300 руб</li>
-              <li>Наголо - 200 руб</li>
-              <li>Детская (до 7 лет) - цена по договоренности</li>
-              <li>Окантовка - 150 руб</li>
-              <li>Стрижка бороды - от 100 руб</li>
-              <li>Мытье головы - от 50 руб</li>
-              <li class="mt-2 text-xl font-medium">Дополнительно:</li>
+    <section class="bg-white py-20">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Прайс</h2>
+        <div class="flex flex-wrap -mx-4">
+          <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+            <div class="bg-gray-100 rounded-lg p-4">
+              <h2 class="text-gray-800 text-2xl font-bold mb-3">Женская стрижка:</h2>
               <ul class="ml-4 text-xl">
+                <li>Короткие волосы - от 500 руб</li>
+                <li>Средние волосы - от 550 руб</li>
+                <li>Стрижка челки - от 600 руб</li>
+                <li>Мытье головы - 200 руб</li>
+                <li>Подравнивание волос - от 300 руб</li>
+              </ul>
+              <h3 class="text-gray-800 text-2xl font-bold mb-3 mt-4">Укладка Женская:</h3>
+              <ul class="ml-4 text-xl">
+                <li>Короткие волосы - от 500 руб</li>
+                <li>Средние волосы - от 600 руб</li>
+                <li>Длинные волосы - от 800 руб</li>
+                <li>Локоны - от 800 руб</li>
+                <li class="italic font-medium mt-5 mb-4">Стоимость услуги зависит от густоты волос и сложности прически</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-4">
+            <div class="bg-gray-100 rounded-lg p-4">
+              <h2 class="text-gray-800 text-2xl font-bold mb-4">Мужская стрижка:</h2>
+              <ul class="ml-4 text-xl">
+                <li>Модельная стрижка - 400 руб</li>
+                <li>Бокс, полубокс - 350 руб</li>
+                <li>Андеркат - 400 руб</li>
+                <li>Площадка - 500 руб</li>
+                <li>Машинкой (1 насадка) - 300 руб</li>
+                <li>Наголо - 200 руб</li>
+                <li>Детская (до 7 лет) - цена по договоренности</li>
                 <li>Окантовка - 150 руб</li>
                 <li>Стрижка бороды - от 100 руб</li>
                 <li>Мытье головы - от 50 руб</li>
+                <li class="mt-2 text-xl font-medium">Дополнительно:</li>
+                <ul class="ml-4 text-xl">
+                  <li>Окантовка - 150 руб</li>
+                  <li>Стрижка бороды - от 100 руб</li>
+                  <li>Мытье головы - от 50 руб</li>
+                </ul>
               </ul>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  
-  
-  
-  
-  
-  
-  
+    </section>
+    
   <section id="home" class="py-20 bg-cover " style="background-image: url('image/curly-female-client-picking-a-color-for-hait-toning-in-beaty-salone\ \(1\).jpg')">
   </section>
 
