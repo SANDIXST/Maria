@@ -33,6 +33,13 @@
     .shadow {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+    #modal-button {
+      z-index: 10;
+    }
+
+    #modal {
+      z-index: 9;
+    }
   </style>
 </head>
 <body class="bg-gray-100">
@@ -193,7 +200,7 @@
             <i class="fas fa-cut"></i>
           </div>
           <h3 class="text-2xl font-bold mb-2">Елена <br> Попова</h3>
-          <p class="text-gray-600 text-xl">Парикмахер</p>
+          <p class="text-gray-600 text-xl">Парикмахер <br> стаж 10 лет</p>
         </div>
         
         <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
@@ -201,7 +208,7 @@
             <i class="fas fa-paint-brush"></i>
           </div>
           <h3 class="text-2xl font-bold mb-2">Светлана <br> Калинина</h3>
-          <p class="text-gray-600 text-xl">Парикмахер</p>
+          <p class="text-gray-600 text-xl">Парикмахер <br> стаж 15 лет</p>
         </div>
         
         <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
@@ -209,7 +216,7 @@
             <i class="fas fa-shower"></i>
           </div>
           <h3 class="text-2xl font-bold mb-2">Евгения <br> Соколова</h3>
-          <p class="text-gray-600 text-xl">Мастер Массажа</p>
+          <p class="text-gray-600 text-xl">Мастер Массажа <br> стаж 6 лет</p>
         </div>
         
         <div class="w-full md:w-1/3 lg:w-1/4 text-center px-4 mb-8 animate__animated animate__fadeIn">
@@ -217,7 +224,7 @@
             <i class="fas fa-male"></i>
           </div>
           <h3 class="text-2xl font-bold mb-2">Юлия <br> Кузнецова</h3>
-          <p class="text-gray-600 text-xl">Мастер Макияжа</p>
+          <p class="text-gray-600 text-xl">Мастер Макияжа <br> стаж 5 лет</p>
         </div>
         
       </div>
@@ -263,82 +270,100 @@
   </section>
 
   <!-- Отзывы -->
-  
-  <div class="container mt-20 swiper mySwiper">
-  <div class="mb-16 swiper-wrapper">
-    <div class="swiper-slide w-full">
-      <div class="p-4 text-gray-800 rounded-lg shadow-md">
-        <div class="mb-2">
-          <p class="mb-2 text-center text-gray-600 sm:text-left">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse."
-          </p>
-          <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
-            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
-              <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
+  <div class="otsivi">
+    <div class="container mt-20 swiper mySwiper">
+      <div class="mb-16 swiper-wrapper">
+        <div class="swiper-slide w-full">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+            <div class="mb-2">
+              <p class="mb-2 text-center text-gray-600 sm:text-left">
+                Я сегодня впервые посетила эту парикмахерскую, и я осталась очень довольна! Мне очень понравилось, как стилисты работали с моими волосами, и я получила именно то, что хотела. Я обязательно вернусь снова!
+              </p>
+              <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
+                <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
+                  <i class="fas fa-user fa-lg text-gray-500 text-center italic normal">
+                    <h5 class="font-bold text-indigo-600">Наталья</h5></i>
+                </div>
+              </div>
             </div>
-            <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
-            <p class="text-sm text-gray-600">лох</p>
+          </div>
+        </div>
+        <div class="swiper-slide w-full">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+            <div class="mb-2">
+              <p class="mb-2 text-center text-gray-600 sm:text-left">
+                Я всегда иду в эту парикмахерскую, потому что здесь работают лучшие стилисты в городе! Они всегда находят идеальный вариант для моих волос, и я остаюсь довольна каждый раз.
+              </p>
+              <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
+                <div class="mt-12 w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
+                  <i class="fas fa-user fa-lg text-gray-500 text-center italic normal">
+                    <h5 class="font-bold text-indigo-600">Александра</h5></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide w-full">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+            <div class="mb-2">
+              <p class="mb-2 text-center text-gray-600 sm:text-left">
+                Посещение этой парикмахерской - это настоящее удовольствие! Я люблю, как стилисты внимательно слушают мои пожелания и предлагают мне новые идеи для моего обновленного образа. Большое спасибо!
+              </p>
+              <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
+                <div class="mt-6 w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
+                  <i class="fas fa-user fa-lg text-gray-500 text-center italic normal">
+                    <h5 class="font-bold text-indigo-600">Анастасия</h5></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide w-full">
+          <div class="p-4 text-gray-800 rounded-lg shadow-md">
+            <div class="mb-2">
+              <p class="mb-2 text-center text-gray-600 sm:text-left">
+                Очень довольна посещением парикмахерской! Стилисты были профессиональными и внимательными к моим пожеланиям. Мне очень понравился дизайн интерьера, а также чистота и комфорт в салоне.
+              </p>
+              <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
+                <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
+                  <i class="fas fa-user fa-lg text-gray-500 text-center italic normal">
+                    <h5 class="font-bold text-indigo-600">Ирина</h5></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-slide w-full">
-      <div class="p-4 text-gray-800 rounded-lg shadow-md">
-        <div class="mb-2">
-          <p class="mb-2 text-center text-gray-600 sm:text-left">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse."
-          </p>
-          <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
-            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
-              <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
-            </div>
-            <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
-            <p class="text-sm text-gray-600">лох</p>
+    <button id="modal-button" class="mb-4 px-4 py-2 bg-blue-500 text-white rounded-md">Написать отзыв</button>
+
+    <div id="modal" class="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-75 hidden">
+      <div class="w-full max-w-md mx-auto my-16 bg-white rounded-md p-4">
+        <h2 class="text-xl font-bold mb-4">Написать отзыв</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="name">Имя</label>
+            <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Введите ваше имя">
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide w-full">
-      <div class="p-4 text-gray-800 rounded-lg shadow-md">
-        <div class="mb-2">
-          <p class="mb-2 text-center text-gray-600 sm:text-left">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse."
-          </p>
-          <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
-            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
-              <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
-            </div>
-            <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
-            <p class="text-sm text-gray-600">лох</p>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="review">Отзыв</label>
+            <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="review" placeholder="Напишите свой отзыв"></textarea>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide w-full">
-      <div class="p-4 text-gray-800 rounded-lg shadow-md">
-        <div class="mb-2">
-          <p class="mb-2 text-center text-gray-600 sm:text-left">
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique sapiente iusto esse."
-          </p>
-          <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
-            <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full sm:w-full">
-              <img src="https://jjji.ru/800x450" alt="img" class="object-cover object-center w-full h-full" />
-            </div>
-            <h5 class="font-bold text-indigo-600">РАКИТИН АА</h5>
-            <p class="text-sm text-gray-600">лох</p>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" id="submit-review">Отправить</button>
+            <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" id="close-modal">Закрыть</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
-  <div class="swiper-pagination"></div>
-</div>
-
-
+  
   
 
+
   <!-- Подвал сайта -->
-  <footer class="bg-gray-300 py-4 flex-shrink-0">
+  <footer class="bg-gray-200 py-4 flex-shrink-0">
     <nav class="container mx-auto flex justify-between items-center text-sm md:text-base">
       <ul class="flex space-x-4">
         <li><a href="#" onclick="smoothScroll('#home')" class="text-gray-600 font-normal hover:text-gray-800">Главная</a></li>
@@ -351,6 +376,7 @@
     </nav>
   </footer>
 
+<script src="js/otsivi.js"></script>
 <script src="js/preloader.js"></script>
 <script src="js/scrollxp.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
