@@ -9,3 +9,4 @@ modalButton.addEventListener('click', () => {
 closeModal.addEventListener('click', () => {
   modal.classList.add('hidden');
 });
+

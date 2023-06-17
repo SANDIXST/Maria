@@ -50,3 +50,4 @@ function smoothScroll(target) {
     translateX = Math.max(maxTranslateX, translateX);
     inner.style.transform = `translateX(${translateX}px)`;
   });
+  

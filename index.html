@@ -38,7 +38,19 @@
     }
 
     #modal {
-      z-index: 9;
+      z-index: 10;
+    }
+    .swiper,swiper-container {
+      padding: 0 2px 0 2px;
+    }
+    #mapModal{
+      z-index: 12;
+    }
+    #about{
+      z-index: 11;
+    }
+    #price{
+      padding-bottom: 20px;
     }
   </style>
 </head>
@@ -135,7 +147,7 @@
       </div>
     </div>
 
-    <section class="bg-white py-20">
+    <section id="price" class="bg-white py-20">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Прайс</h2>
         <div class="flex flex-wrap -mx-4">
@@ -341,7 +353,7 @@
       <div class="swiper-pagination"></div>
     </div>
     <div class="flex justify-center">
-      <button id="modal-button" class="mb-4 px-4 py-4 bg-blue-500 text-white rounded-md bg-center">Написать отзыв</button>
+      <button id="modal-button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 mb-3 px-6 rounded-lg focus:outline-none focus:shadow-outline bg-center">Написать отзыв</button>
     </div>
     <div id="modal" class="fixed top-0 left-0 right-0 bottom-0 bg-gray-800 bg-opacity-75 hidden">
       <div class="w-full max-w-md mx-auto my-16 bg-white rounded-md p-4">
@@ -355,13 +367,23 @@
             <label class="block text-gray-700 font-bold mb-2" for="review">Отзыв</label>
             <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="review" placeholder="Напишите свой отзыв"></textarea>
           </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="rating">Оценка</label>
+            <select class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="rating">
+              <option value="5">Отлично</option>
+              <option value="4">Хорошо</option>
+              <option value="3">Нормально</option>
+              <option value="2">Плохо</option>
+              <option value="1">Ужасно</option>
+            </select>
+          </div>
           <div class="flex items-center justify-between">
             <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" id="submit-review">Отправить</button>
             <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" id="close-modal">Закрыть</button>
           </div>
         </form>
       </div>
-    </div>
+    </div>  
   </div>
   
   
@@ -376,7 +398,7 @@
         <li><a href="#" onclick="smoothScroll('#contact')" class="text-gray-600 hover:text-gray-800">Контакты</a></li>
       </ul>
       <div>
-        <a onclick="smoothScroll('#home')" class="text-base md:text-xl font-medium text-gray-800 whitespace-normal w-48 md:w-auto">Парикмахерская "Мария"</a>
+        <a href="#" onclick="smoothScroll('#home')" class="text-base md:text-xl font-medium text-gray-800 whitespace-normal w-48 md:w-auto">Парикмахерская "Мария"</a>
       </div>
     </nav>
   </footer>
