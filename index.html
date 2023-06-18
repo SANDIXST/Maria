@@ -59,9 +59,43 @@
   <div id="preloader">
     <div id="status">&nbsp;</div>
   </div>
+  <nav class="bg-white shadow">
+    <div class=" mx-auto px-4">
+      <div class="flex px-4 py-6 items-center mx-auto">
   
+        <div mr-auto>
+          <a href="#" class="text-xl font-bold text-gray-800">Парикмахерская "Мария"</a>
+        </div>
+  
+        <div class="flex items-center ml-auto hidden md:flex">
+          <div class="flex space-x-4 items-center">
+            <a href="#" onclick="smoothScroll('#home')" class=" text-gray-800 hover:text-gray-600 ">Главная</a>
+            <a href="#" onclick="smoothScroll('#about')" class=" text-gray-800 hover:text-gray-600 ">Услуги</a>
+            <a href="#" onclick="smoothScroll('#contact')" class=" text-gray-800 hover:text-gray-600 ">Контакты</a>
+          </div>
+        </div>
+  
+        <div class="md:hidden flex items-center ml-auto">
+          <button class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+      <a href="#" onclick="smoothScroll('#home')" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Главная</a>
+      <a href="#" onclick="smoothScroll('#about')" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Услуги</a>
+      <a href="#" onclick="smoothScroll('#contact')" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Контакты</a>
+    </div>
+  
+  </nav>
   <!-- Шапка сайта -->
-  <header class="bg-white shadow">
+  <!-- <header class="bg-white shadow">
     <div class="container mx-auto px-4 py-6 flex justify-between items-center max-w-7xl mx-auto">
         <a href="#" class="text-xl font-bold text-gray-800">Парикмахерская "Мария"</a>
         <nav>
@@ -70,7 +104,7 @@
             <a href="#" onclick="smoothScroll('#contact')" class="text-gray-800 hover:text-gray-600">Контакты</a>
         </nav>
     </div>
-  </header>
+  </header> -->
 
   <!-- Баннер -->
   <section id="home" class="bg-gray-200 py-10 md:py-20 bg-cover relative" style="background-image: url('image/scissors-and-hair-trimmer-copy-space-min.jpg')">
@@ -101,10 +135,10 @@
   </section>
   
   <!-- Модальное окно с картой -->
-  <div id="mapModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="bg-white rounded-lg p-6">
-      <!-- Здесь должен быть код для вставки карты API -->
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2155a758b4b78c5ca6d5301dd13b80f5e28e9242c4e1f8d1215bb2eab4368518&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  <div id="mapModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center ">
+    <div class=" bg-white rounded-lg p-6">
+      <div  class="md:hidden"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2155a758b4b78c5ca6d5301dd13b80f5e28e9242c4e1f8d1215bb2eab4368518&amp;width=200&amp;height=300&amp;lang=ru_RU&amp;scroll=true"></script></div>
+      <div  class="hidden md:block"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2155a758b4b78c5ca6d5301dd13b80f5e28e9242c4e1f8d1215bb2eab4368518&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script></div>
       <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4" onclick="closeMapModal()">Закрыть</button>
     </div>
   </div>
@@ -318,7 +352,7 @@
                 как стилисты работали с моими волосами, и я получила именно то, что хотела. Я обязательно вернусь снова!
               </p>
               <div class="flex flex-col items-center justify-center sm:flex-col sm:items-center">
-                <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full w-full">
+                <div class="mt-6 w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full w-full">
                   <i class="fas fa-user fa-lg text-gray-500 text-center italic normal">
                     <h5 class="font-bold text-blue-500">Наталья</h5>
                     <p class="text-sm text-gray-600">2.06.2023</p></i>
@@ -418,7 +452,7 @@
   <!-- Подвал сайта -->
   <footer class="bg-gray-200 py-4 flex-shrink-0">
     <nav class="container mx-auto flex justify-between items-center text-sm md:text-base">
-      <ul class="flex space-x-4">
+      <ul class="flex space-x-4 align-center px-4  "  >
         <li><a href="#" onclick="smoothScroll('#home')" class="text-gray-600 font-normal hover:text-gray-800">Главная</a></li>
         <li><a href="#" onclick="smoothScroll('#about')" class="text-gray-600 hover:text-gray-800">Услуги</a></li>
         <li><a href="#" onclick="smoothScroll('#contact')" class="text-gray-600 hover:text-gray-800">Контакты</a></li>
@@ -431,6 +465,7 @@
 
 <script src="js/otsivi.js"></script>
 <script src="js/preloader.js"></script>
+<script src="js/header.js"></script>
 <script src="js/scrollxp.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/swipper.js"></script>
